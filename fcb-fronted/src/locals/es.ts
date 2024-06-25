@@ -44,7 +44,7 @@ export default {
   admin: {
     about: {
       source1: 'Proyecto de código abierto en Github:',
-      source2: 'FileCodeBox'
+      source2: 'shuttletool'
     },
     settings: {
       name: 'Nombre del sitio web',
@@ -72,7 +72,7 @@ export default {
         title: 'Motor de almacenamiento',
         local: 'Almacenamiento local',
         s3: 'Almacenamiento S3',
-        note: 'Es necesario reiniciar FileCodeBox después de actualizar',
+        note: 'Es necesario reiniciar shuttletool después de actualizar',
       },
       mei: 'Cada',
       minute: 'Minuto',

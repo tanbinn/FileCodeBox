@@ -1,19 +1,19 @@
 <div align="center">
 <h1>File Delivery Cabinet - Lite</h1>
-<h2>FileCodeBox-Lite</h2>
+<h2>shuttletool-Lite</h2>
 <p><em>Anonymous passcode sharing of text and files, picking up files just like picking up express deliveries</em></p>
 <p>Join our QQ Group: 739673698</p>
 </div>
 
-![banner](https://fastly.jsdelivr.net/gh/vastsa/FileCodeBox@V1.6/static/banners/img_1.png)
+![banner](https://fastly.jsdelivr.net/gh/vastsa/shuttletool@V1.6/static/banners/img_1.png)
 
 ---
 
 <div align="center" style="text-align: center;margin: 20px 0">
     <a href="./readme.md">简体中文</a> | 
     <a href="./readme_en.md">English</a> | 
-    <a href="https://github.com/vastsa/FileCodeBox/wiki/Deployment-Tutorial">Deployment Guide</a> | 
-    <a href="https://github.com/vastsa/FileCodeBox/wiki/Frequently-asked-questions">FAQ</a>
+    <a href="https://github.com/vastsa/shuttletool/wiki/Deployment-Tutorial">Deployment Guide</a> | 
+    <a href="https://github.com/vastsa/shuttletool/wiki/Frequently-asked-questions">FAQ</a>
 </div>
 
 ## Screenshots
@@ -55,7 +55,7 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=vastsa/FileCodeBox&type=Date)](https://star-history.com/#vastsa/FileCodeBox&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=vastsa/shuttletool&type=Date)](https://star-history.com/#vastsa/shuttletool&Date)
 
 ## Disclaimer
 

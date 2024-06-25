@@ -44,7 +44,7 @@ export default {
   admin: {
     about: {
       source1: 'This project is open-source on Github: ',
-      source2: 'FileCodeBox'
+      source2: 'shuttletool'
     },
     settings: {
       name: 'Website Name',
@@ -72,7 +72,7 @@ export default {
         title: 'Storage Engine',
         local: 'Local Storage',
         s3: 'S3 Storage',
-        note: 'After updating, you need to restart FileCodeBox',
+        note: 'After updating, you need to restart shuttletool',
       },
       mei: 'Every',
       minute: 'Minutes',

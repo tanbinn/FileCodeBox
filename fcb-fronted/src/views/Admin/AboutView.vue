@@ -2,7 +2,7 @@
   <main style="text-align: center">
       <span>{{ t('admin.about.source1') }}
         <em>
-        <a style="color: #333" href="https://github.com/vastsa/FileCodeBox">{{ t('admin.about.source2') }}</a>
+        <a style="color: #333" href="https://github.com/vastsa/shuttletool">{{ t('admin.about.source2') }}</a>
         </em>
       </span>
   </main>

@@ -1,4 +1,4 @@
-![banner](https://fastly.jsdelivr.net/gh/vastsa/FileCodeBox@V1.6/static/banners/img_1.png)
+![banner](https://fastly.jsdelivr.net/gh/vastsa/shuttletool@V1.6/static/banners/img_1.png)
 
 <div align="center">
 <h1>文件快递柜-轻量</h1>
@@ -13,8 +13,8 @@
 <div align="center" style="text-align: center;margin: 20px">
     <a href="./readme.md">简体中文</a> | 
     <a href="./readme_en.md">English</a> | 
-    <a href="https://github.com/vastsa/FileCodeBox/wiki/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B">部署教程</a> | 
-    <a href="https://github.com/vastsa/FileCodeBox/wiki/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B">常见问题</a>
+    <a href="https://github.com/vastsa/shuttletool/wiki/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B">部署教程</a> | 
+    <a href="https://github.com/vastsa/shuttletool/wiki/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B">常见问题</a>
 </div>
 
 
@@ -62,7 +62,7 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=vastsa/FileCodeBox&type=Date)](https://star-history.com/#vastsa/FileCodeBox&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=vastsa/shuttletool&type=Date)](https://star-history.com/#vastsa/shuttletool&Date)
 
 
 ## 免责声明
