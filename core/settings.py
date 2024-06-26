@@ -13,12 +13,12 @@ if not data_root.exists():
 
 DEFAULT_CONFIG = {
     'file_storage': 'local',
-    'name': '文件快递柜-shuttletool',
-    'description': '开箱即用的文件快传系统',
-    'notify_title': '系统通知',
-    'notify_content': '欢迎使用shuttletool，本程序开源于 <a href="https://github.com/vastsa/shuttletool" target="_blank">Github</a> ，欢迎Star和Fork。',
-    'page_explain': '根据《中华人民共和国网络安全法》、《中华人民共和国刑法》、《中华人民共和国治安管理处罚法》等相关规定。 传播或存储违法、违规内容，会受到相关处罚，严重者将承担刑事责任。请勿上传非法文件，本站坚决配合相关部门，确保网络内容的安全，和谐，打造绿色网络环境。',
-    'keywords': 'shuttletool, 文件快递柜, 口令传送箱, 匿名口令分享文本, 文件',
+    'name': 'shuttletool',
+    'description': 'Convenient file fast transfer system',
+    'notify_title': 'System notifications',
+    'notify_content': 'welcome to use shuttletool',
+    'page_explain': '',
+    'keywords': 'shuttletool',
     's3_access_key_id': '',
     's3_secret_access_key': '',
     's3_bucket_name': '',
