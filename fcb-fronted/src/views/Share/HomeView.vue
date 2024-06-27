@@ -67,8 +67,8 @@ const listenInput = (num: number) => {
     code.value += num
   }
 };
-const name = atob('RmlsZUNvZGVCb3ggVjIuMQ==');
-const url = atob('aHR0cHM6Ly9naXRodWIuY29tL3Zhc3RzYS9GaWxlQ29kZUJveA==');
+const name = atob('c2h1dHRsZXRvb2wgdjEuMA==');
+const url = atob('');
 </script>
 
 <template>

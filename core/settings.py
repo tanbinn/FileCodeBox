@@ -35,7 +35,7 @@ DEFAULT_CONFIG = {
     'onedrive_password': '',
     'onedrive_root_path': 'filebox_storage',
     'onedrive_proxy': 0,
-    'admin_token': 'shuttletool2023',
+    'admin_token': 'shuttletool2024',
     'openUpload': 1,
     'uploadSize': 1024 * 1024 * 100,
     'expireStyle': ['count'],
