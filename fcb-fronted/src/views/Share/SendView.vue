@@ -24,11 +24,11 @@ const shareData = ref({
         <div>  
           <el-input  
               v-model="shareData.expireValue"  
-              style="width: 200px"  
+              style="width: 370px"  
               :placeholder="t('send.pleaseInputExpireValue')"  
           >  
             <template #prepend>  
-              <el-select v-model="shareData.expireStyle" :placeholder="t('send.expireStyle')" style="width: 70px">  
+              <el-select v-model="shareData.expireStyle" :placeholder="t('send.expireStyle')" style="width: 85px">  
                 <template v-for="item in config.expireStyle">  
                   <el-option v-for="item in config.expireStyle" :key="item" :label="t(`send.expireData.${item}`)" :value="item" />
                 </template>  

@@ -29,7 +29,7 @@ export default {
   },
   fileBox: {
     copySuccess: 'Copy Successful',
-    inputNotEmpty: 'Please enter a five-digit retrieval code',
+    inputNotEmpty: 'Enter a five-digit code',
     sendFileBox: 'Outgoing Box',
     ok: 'OK',
     receiveFileBox: 'Incoming Box',
