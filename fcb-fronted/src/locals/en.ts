@@ -2,7 +2,7 @@ export default {
   send: {
     disclaimers: 'Page Instructions',
     prompt1: 'Drag and drop text or files here, or ',
-    prompt2: 'Days <7 or limited number of times (deleted after 24h)',
+    prompt2: 'delete after 5 minutes',
     prompt3: 'Please enter the text you want to send, supports MarkDown format',
     share: 'Share',
     textShare: 'Text Share',
