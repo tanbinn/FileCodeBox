@@ -48,10 +48,10 @@ async def share_text(text: str = Form(...), expire_value: int = Form(default=1, 
 async def share_file(expire_value: int = Form(default=1, gt=0), expire_style: str = Form(default='day'), file: UploadFile = File(...), ip: str = Depends(upload_ip_limit)):
     # 检查文件大小是否超过限制
     if file.size > int(settings.uploadSize):
-        raise HTTPException(status_code=403, detail=f'文件大小超过限制，最大为{settings.uploadSize}字节')
+        raise HTTPException(status_code=403, detail=f'The file size exceeds the limit, with a maximum of{settings.uploadSize}bytes')
     # 获取过期信息
     if expire_style not in settings.expireStyle:
-        raise HTTPException(status_code=400, detail='过期时间类型错误')
+        raise HTTPException(status_code=400, detail='Expiration time type error')
     expired_at, expired_count, used_count, code = await get_expire_info(expire_value, expire_style)
     # 获取文件路径和名称
     path, suffix, prefix, uuid_file_name, save_path = await get_file_path_name(file)
@@ -85,10 +85,10 @@ async def get_code_file_by_code(code, check=True):
     file_code = await FileCodes.filter(code=code).first()
     # 检查文件是否存在
     if not file_code:
-        return False, '文件不存在'
+        return False, 'file does not exist'
     # 检查文件是否过期
     if await file_code.is_expired() and check:
-        return False, '文件已过期',
+        return False, 'The file has expired',
     return True, file_code
 
 
@@ -155,7 +155,7 @@ async def download_file(key: str, code: str, ip: str = Depends(error_ip_limit)):
     # 检查文件是否存在
     if not has:
         # 返回API响应
-        return APIResponse(code=404, detail='文件不存在')
+        return APIResponse(code=404, detail='file does not exist')
     # 如果文件是文本，返回文本内容，否则返回文件响应
     if file_code.text:
         return APIResponse(detail=file_code.text)

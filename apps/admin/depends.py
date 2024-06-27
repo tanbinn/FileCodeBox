@@ -13,7 +13,7 @@ async def admin_required(authorization: Union[str, None] = Header(default=None),
     is_admin = authorization == str(settings.admin_token)
     if request.url.path.startswith('/share/'):
         if not settings.openUpload and not is_admin:
-            raise HTTPException(status_code=403, detail='本站未开启游客上传，如需上传请先登录后台')
+            raise HTTPException(status_code=403, detail='This site has not enabled tourist uploads. If you need to upload, please log in to the backend first')
     else:
         if not is_admin:
-            raise HTTPException(status_code=401, detail='未授权或授权校验失败')
+            raise HTTPException(status_code=401, detail='Unauthorized or failed authorization verification')
