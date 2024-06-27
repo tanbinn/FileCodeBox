@@ -63,13 +63,13 @@ async def get_expire_info(expire_value: int, expire_style: str):
             raise HTTPException(status_code=403, detail=detail)
         expired_at = now + datetime.timedelta(minutes=expire_value)
     elif expire_style == 'count':
-        expired_at = now + datetime.timedelta(days=1)
+        expired_at = now + datetime.timedelta(minutes=5)
         expired_count = expire_value
     elif expire_style == 'forever':
         expired_at = None
         code = await get_random_code(style='string')
     else:
-        expired_at = now + datetime.timedelta(days=1)
+        expired_at = now + datetime.timedelta(minutes=5)
     if not code:
         code = await get_random_code()
     return expired_at, expired_count, used_count, code

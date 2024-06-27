@@ -287,7 +287,7 @@ class OpenDALFileStorage(FileStorageInterface):
             return Response(content, headers=headers, media_type="application/octet-stream")
         except Exception as e:
             print(e, file=sys.stderr)
-            raise HTTPException(status_code=404, detail="文件已过期删除")
+            raise HTTPException(status_code=404, detail="file has been expired or deleted")
 
 
 storages = {
