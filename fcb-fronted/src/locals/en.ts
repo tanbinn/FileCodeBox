@@ -2,7 +2,7 @@ export default {
   send: {
     disclaimers: 'Page Instructions',
     prompt1: 'Drag and drop text or files here, or ',
-    prompt2: 'Days <7 or limited number of times (deleted after 24h)',
+    prompt2: 'deleted after 5 minutes',
     prompt3: 'Please enter the text you want to send, supports MarkDown format',
     share: 'Share',
     textShare: 'Text Share',
@@ -29,7 +29,7 @@ export default {
   },
   fileBox: {
     copySuccess: 'Copy Successful',
-    inputNotEmpty: 'Please enter a five-digit retrieval code',
+    inputNotEmpty: 'Enter five-digit code',
     sendFileBox: 'Outgoing Box',
     ok: 'OK',
     receiveFileBox: 'Incoming Box',
@@ -43,8 +43,8 @@ export default {
   },
   admin: {
     about: {
-      source1: 'This project is open-source on Github: ',
-      source2: 'FileCodeBox'
+      source1: 'welcome to use shuttletool',
+      source2: 'shuttletool'
     },
     settings: {
       name: 'Website Name',

@@ -74,7 +74,7 @@ async def get_file_by_id(id):
     file_code = await FileCodes.filter(id=id).first()
     # 检查文件是否存在
     if not file_code:
-        return False, '文件不存在'
+        return False, 'file does not exist'
     return True, file_code
 
 
@@ -85,7 +85,7 @@ async def file_download(id: int):
     # 检查文件是否存在
     if not has:
         # 返回API响应
-        return APIResponse(code=404, detail='文件不存在')
+        return APIResponse(code=404, detail='file does not exist')
     # 如果文件是文本，返回文本内容，否则返回文件响应
     if file_code.text:
         return APIResponse(detail=file_code.text)

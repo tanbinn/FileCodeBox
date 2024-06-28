@@ -18,7 +18,7 @@ const props = defineProps({
     default: () => {
       return {
         expire_value: 1,
-        expire_style: 'day',
+        expire_style: 'count',
       }
     }
   }
@@ -162,7 +162,7 @@ onMounted(()=>{
       <div class="el-upload__text">
         {{t('send.prompt1')}}<em>{{t('send.clickUpload')}}</em>
       </div>
-      <div class="el-upload__text" style="font-size: 10px;">{{t('send.prompt2')}}</div>
+      <div class="el-upload__text" style="font-size: 15px;">{{t('send.prompt2')}}</div>
       <template #tip>
         <div class="el-upload__tip">
         </div>

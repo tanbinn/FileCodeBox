@@ -89,7 +89,7 @@ class SystemFileStorage(FileStorageInterface):
     async def get_file_response(self, file_code: FileCodes):
         file_path = self.root_path / await file_code.get_file_path()
         if not file_path.exists():
-            return APIResponse(code=404, detail='文件已过期删除')
+            return APIResponse(code=404, detail='The file has expired删除')
         return FileResponse(file_path, filename=file_code.prefix + file_code.suffix)
 
 
@@ -287,7 +287,7 @@ class OpenDALFileStorage(FileStorageInterface):
             return Response(content, headers=headers, media_type="application/octet-stream")
         except Exception as e:
             print(e, file=sys.stderr)
-            raise HTTPException(status_code=404, detail="文件已过期删除")
+            raise HTTPException(status_code=404, detail="The file has expired删除")
 
 
 storages = {

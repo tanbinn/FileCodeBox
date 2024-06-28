@@ -46,10 +46,10 @@ async def get_expire_info(expire_value: int, expire_style: str):
     if int(settings.max_save_seconds) > 0:
         max_timedelta = datetime.timedelta(seconds=settings.max_save_seconds)
         detail = await max_save_times_desc(settings.max_save_seconds)
-        detail = f'保存时间超过限制，{detail[0]}'
+        detail = f'Save Time Exceeded Limit,{detail[0]}'
     else:
         max_timedelta = datetime.timedelta(days=7)
-        detail = '保存时间超过限制，最长保存时间：7天'
+        detail = 'Save time exceeds the limit, maximum save time: 7 days'
     if expire_style == 'day':
         if datetime.timedelta(days=expire_value) > max_timedelta:
             raise HTTPException(status_code=403, detail=detail)
@@ -63,7 +63,7 @@ async def get_expire_info(expire_value: int, expire_style: str):
             raise HTTPException(status_code=403, detail=detail)
         expired_at = now + datetime.timedelta(minutes=expire_value)
     elif expire_style == 'count':
-        expired_at = now + datetime.timedelta(days=1)
+        expired_at = now + datetime.timedelta(minutes=1)
         expired_count = expire_value
     elif expire_style == 'forever':
         expired_at = None
