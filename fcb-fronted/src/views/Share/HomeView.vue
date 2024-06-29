@@ -22,7 +22,11 @@ import { useConfigStore } from "@/stores/config";
 
 const { config } = useConfigStore()
 const noDialog = ()=>{
+  let confirmText = ['1. Enter a 5-digit pickup code on the homepage to download.','2. Click the button in the bottom left corner to upload.','3. The pickup code of the uploaded file can be viewed by clicking the button in the bottom right corner.'];
+  let str1 = confirmText.join(' <br/> ');
   ElMessageBox.alert(config.explain, t('send.disclaimers'), {
+    dangerouslyUseHTMLString: true,
+    message: str1,
     confirmButtonText: t('fileBox.ok'),
   });
 }

@@ -16,7 +16,7 @@ DEFAULT_CONFIG = {
     'name': 'shuttletool',
     'description': '',
     'notify_title': 'system notification',
-    'notify_content': 'welcome to use shuttletool',
+    'notify_content': 'welcome to use shuttletool.\nEnter a 5-digit pickup code on the homepage to download.\n Click the button in the bottom left corner to upload.\nThe pickup code of the uploaded file can be viewed by clicking the button in the bottom right corner.',
     'page_explain': '',
     'keywords': 'shuttletool',
     's3_access_key_id': '',
