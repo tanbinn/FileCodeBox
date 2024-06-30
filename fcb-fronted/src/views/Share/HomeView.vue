@@ -6,7 +6,6 @@ import CardTools from "@/components/CardTools.vue";
 import { useFileBoxStore } from "@/stores/fileBox";
 import { useFileDataStore } from "@/stores/fileData";
 import { ElMessageBox } from 'element-plus'
-
 import { request } from "@/utils/request";
 const fileBoxStore = useFileBoxStore();
 const fileStore = useFileDataStore();
@@ -120,7 +119,11 @@ const goToLink = () => {
         <div style="text-align: center; margin-top: 1rem;">  
           <el-button type="primary" round @click="goToLink">Download</el-button>  
         </div>
+        
+        <img src="@/assets/logo.png" class="responsive-image">  
       </el-card>
+
+
     </div>
 
     <div style="text-align: center; margin-top: 1rem;color: #0a0a0a;">
@@ -144,7 +147,7 @@ const goToLink = () => {
     background-color: #ffffff; /* 确保背景是白色 */  
     opacity: 1; /* 确保是不透明的 */ 
     display: flex;  
-    align-items: stretch; // 使卡片高度一致  
+    /*align-items: stretch; // 使卡片高度一致 */ 
     justify-content: space-between; // 卡片之间保持一定距离  
     margin: 1rem 0;
     padding-bottom: 2rem;
@@ -172,4 +175,18 @@ const goToLink = () => {
       border-radius: 20px !important;
     }
   }
+  
+  .image-container {  
+    /* 如果需要，可以设置与第二个卡片相同的margin等样式 */  
+    /* 例如: margin-left: 3rem; 但注意这会影响布局 */  
+    text-align: center; /* 使图片居中 */  
+    margin-top: 1rem; /* 根据需要调整间距 */  
+  }  
+  
+  .responsive-image {  
+    width: 80%; /* 宽度100%，与容器宽度相同 */  
+    margin-left: 2rem; 
+    height: auto; /* 高度自适应，保持图片宽高比 */  
+    display: block; /* 防止图片下方出现额外空间 */  
+  }  
 </style>
