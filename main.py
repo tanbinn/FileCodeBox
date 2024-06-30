@@ -3,6 +3,7 @@
 # @File    : main.py
 # @Software: PyCharm
 import asyncio
+import requests
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -63,13 +64,28 @@ async def startup_event():
 
 @app.get('/')
 async def index():
+    # API的URL  
+    api_url = "https://api.vvhan.com/api/wallpaper/views?type=json"  
+    
+    # 发送GET请求  
+    response = requests.get(api_url)  
+    
+    # 检查响应状态码是否为200（成功）  
+    if response.status_code == 200:  
+        # 将响应内容转换为字典  
+        data = response.json()  
+        # 打印url的值  
+        print(data['url'])  
+    else:  
+        print("Failed to retrieve data from the API.")
+    
     return HTMLResponse(
         content=open(BASE_DIR / 'fcb-fronted/dist/index.html', 'r', encoding='utf-8').read()
         .replace('{{title}}', str(settings.name))
         .replace('{{description}}', str(settings.description))
         .replace('{{keywords}}', str(settings.keywords))
         .replace('{{opacity}}', str(settings.opacity))
-        .replace('{{background}}', str(settings.background))
+        .replace('{{background}}', str(data['url']))
         , media_type='text/html', headers={'Cache-Control': 'no-cache'})
 
 

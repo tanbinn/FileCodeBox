@@ -14,19 +14,19 @@ const fileBoxStore = useFileBoxStore();
 <template>
   <div class="tools">
     <div class="circle">
-      <el-icon size="35" color="#212121" class="red box" @click="router.push({'name':route.name=='home'?'send':'home'})">
+      <el-icon size="25" color="#212121" class="red box" @click="router.push({'name':route.name=='home'?'send':'home'})">
         <Back v-if="route.name=='send'"></Back>
         <Upload v-else></Upload>
       </el-icon>
     </div>
     <div class="circle">
-      <el-icon size="35" color="#212121" class="yellow box" @click="toggleDark(!isDark)">
+      <el-icon size="25" color="#212121" class="yellow box" @click="toggleDark(!isDark)">
         <Moon v-if="isDark"></Moon>
         <Sunny v-else></Sunny>
       </el-icon>
     </div>
     <div class="circle">
-      <el-icon size="35" color="#212121" class="green box" @click="fileBoxStore.showFileBox=true">
+      <el-icon size="25" color="#212121" class="green box" @click="fileBoxStore.showFileBox=true">
         <TakeawayBox></TakeawayBox>
       </el-icon>
     </div>

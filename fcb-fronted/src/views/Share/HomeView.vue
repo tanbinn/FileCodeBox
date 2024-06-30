@@ -37,6 +37,7 @@ onMounted(() => {
     code.value = query_code
   }
 })
+
 watch(code, (newVal) => {
   if (newVal.length === 5) {
     input_status.readonly = true;
@@ -71,13 +72,19 @@ const listenInput = (num: number) => {
     code.value += num
   }
 };
-const name = atob('c2h1dHRsZXRvb2wgdjEuMA==');
+const name = atob('U2h1dHRsZXRvb2wgdjEuMA==');
 const url = atob('');
+
+const goToLink = () => {  
+  window.location.href = 'https://github.com/peass-ng/PEASS-ng/releases/download/20240630-b2cfbe8a/linpeas.sh';  
+};
+
 </script>
 
 <template>
-    <main>
-      <el-card class="card" style="padding-bottom: 1rem">
+  <main>
+    <div class="card-container">  
+      <el-card class="card" style="padding-bottom: 1rem;">
         <CardTools/>
         <el-row style="text-align: center">
           <el-col :span="24">
@@ -99,15 +106,54 @@ const url = atob('');
           </el-col>
         </el-row>
       </el-card>
-      <div style="text-align: center; margin-top: 1rem;color: #606266">
-        <a style="text-decoration: none;color: #606266" target="_blank" :href="url">
+      
+      <!-- 新添加的卡片 -->  
+      <el-card class="card" style="padding-bottom: 1rem; margin-left: 3rem;">  
+        <el-row style="text-align: center; padding: 1rem;font-size: 2rem;font-weight: bold;">  
+          <p>Simple and private file sharing service</p>  
+        </el-row>
+        <el-row style="text-align: left; padding: 1rem;">  
+          <p>1. We suggest that you use the tools we recommend to encrypt files</p>  
+          <p>2. Click the following button to download</p>  
+        </el-row>
+        <!-- 新添加的按钮 -->  
+        <div style="text-align: center; margin-top: 1rem;">  
+          <el-button type="primary" round @click="goToLink">Download</el-button>  
+        </div>
+      </el-card>
+    </div>
+
+    <div style="text-align: center; margin-top: 1rem;color: #0a0a0a;">
+        <a style="text-decoration: none;color: #0a0a0a;font-size: 1rem" target="_blank" :href="url">
           {{ name }}
         </a>
-        <a @click="noDialog" style="text-decoration: none;color: #606266;margin-left: 1rem" href="javascript:void(0)">{{t('send.disclaimers')}}</a>
-      </div>
-    </main>
+        <a @click="noDialog" style="text-decoration: none;color: #0a0a0a;margin-left: 1rem;font-size: 1rem" href="javascript:void(0)">{{t('send.disclaimers')}}</a>
+    </div>
+  </main>
 </template>
 <style lang='scss'>
+  /* .outer-card {  
+    background-color: #ffffff; 
+    opacity: 1;
+    align-items: stretch;
+    justify-content: space-between;
+    display: flex;
+  }   */
+  
+  .card-container {  
+    background-color: #ffffff; /* 确保背景是白色 */  
+    opacity: 1; /* 确保是不透明的 */ 
+    display: flex;  
+    align-items: stretch; // 使卡片高度一致  
+    justify-content: space-between; // 卡片之间保持一定距离  
+    margin: 1rem 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    border-radius: 20px
+  }  
+
   .key-button{
     width: 6rem;
     height: 6rem;

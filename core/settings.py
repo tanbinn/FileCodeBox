@@ -40,11 +40,11 @@ DEFAULT_CONFIG = {
     'uploadSize': 1024 * 1024 * 100,
     'expireStyle': ['count'],
     'uploadMinute': 1,
-    'opacity': 0.9,
+    'opacity': 1,
     'background': '',
     'uploadCount': 10,
     'errorMinute': 1,
-    'errorCount': 1,
+    'errorCount': 3,
     'port': 12345,
 }
 
