@@ -1,7 +1,3 @@
-# @Time    : 2023/8/15 17:43
-# @Author  : Lan
-# @File    : depends.py
-# @Software: PyCharm
 from typing import Union
 
 from fastapi import Header, HTTPException

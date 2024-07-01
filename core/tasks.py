@@ -1,7 +1,3 @@
-# @Time    : 2023/8/15 22:00
-# @Author  : Lan
-# @File    : tasks.py
-# @Software: PyCharm
 import asyncio
 
 from tortoise.expressions import Q

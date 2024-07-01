@@ -1,7 +1,3 @@
-# @Time    : 2023/8/14 03:59
-# @Author  : Lan
-# @File    : views.py
-# @Software: PyCharm
 # 导入所需的库和模块
 from fastapi import APIRouter, Form, UploadFile, File, Depends, HTTPException
 from apps.admin.depends import admin_required

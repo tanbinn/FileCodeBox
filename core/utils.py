@@ -1,7 +1,3 @@
-# @Time    : 2023/8/13 19:54
-# @Author  : Lan
-# @File    : utils.py
-# @Software: PyCharm
 import datetime
 import hashlib
 import random

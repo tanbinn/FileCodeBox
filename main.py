@@ -1,7 +1,3 @@
-# @Time    : 2023/8/9 23:23
-# @Author  : Lan
-# @File    : main.py
-# @Software: PyCharm
 import asyncio
 import requests
 

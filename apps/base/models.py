@@ -1,7 +1,3 @@
-# @Time    : 2023/8/13 20:43
-# @Author  : Lan
-# @File    : models.py
-# @Software: PyCharm
 from datetime import datetime
 from typing import Optional
 

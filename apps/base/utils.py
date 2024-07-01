@@ -1,7 +1,3 @@
-# @Time    : 2023/8/14 01:10
-# @Author  : Lan
-# @File    : utils.py
-# @Software: PyCharm
 import datetime
 import uuid
 import os

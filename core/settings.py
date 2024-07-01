@@ -1,7 +1,3 @@
-# @Time    : 2023/8/15 09:51
-# @Author  : Lan
-# @File    : settings.py
-# @Software: PyCharm
 import json
 from pathlib import Path
 

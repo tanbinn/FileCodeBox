@@ -1,7 +1,3 @@
-# @Time    : 2023/8/11 20:06
-# @Author  : Lan
-# @File    : storage.py
-# @Software: PyCharm
 from typing import Optional
 
 import aiohttp

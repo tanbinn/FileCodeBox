@@ -1,7 +1,3 @@
-# @Time    : 2023/8/14 12:20
-# @Author  : Lan
-# @File    : depends.py
-# @Software: PyCharm
 from typing import Union
 from datetime import datetime, timedelta
 
